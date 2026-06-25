@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目展示 - 信息学院学生学习导航平台</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="../index.html">信息学院学生学习导航平台</a>
+      <button class="nav-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+      <ul class="nav-menu">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="courses.html">课程资源</a></li>
+        <li><a href="experiments.html">实验作业</a></li>
+        <li><a href="projects.html">项目展示</a></li>
+        <li><a href="tools.html">学习工具</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Student Projects</p>
+        <h1>项目展示</h1>
+        <p>展示信息学院学生常见创新项目类型，帮助理解项目选题、功能表达和技术路线之间的关系。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card-grid" id="projects-overview">
+        <article class="project-card fade-card highlight-card">
+          <div class="project-cover cover-site">静态网站</div>
+          <h2>学习导航静态网站项目</h2>
+          <p>围绕课程资源、实验作业、创新项目和学习工具建设静态网站，适合课程展示和报告截图。</p>
+          <div class="tag-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a class="btn btn-small" href="#project-static-site">跳转到项目详情</a>
+        </article>
+
+        <article class="project-card fade-card">
+          <div class="project-cover cover-ml">机器学习</div>
+          <h2>学习状态预测项目</h2>
+          <p>基于公开或模拟数据进行特征分析、模型训练和结果评估，用于理解机器学习实践流程。</p>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>数据分析</span>
+          </div>
+          <a class="btn btn-small" href="#project-ml">跳转到项目详情</a>
+        </article>
+
+        <article class="project-card fade-card">
+          <div class="project-cover cover-mini">小程序</div>
+          <h2>校园服务小程序项目</h2>
+          <p>设计课程表、通知提醒、校园资讯等模块，体现移动端轻量化应用的交互与页面组织方式。</p>
+          <div class="tag-row">
+            <span>小程序</span>
+            <span>界面设计</span>
+            <span>信息服务</span>
+          </div>
+          <a class="btn btn-small" href="#project-mini">跳转到项目详情</a>
+        </article>
+
+        <article class="project-card fade-card">
+          <div class="project-cover cover-image">图像处理</div>
+          <h2>图像增强与识别项目</h2>
+          <p>完成图像读取、灰度处理、滤波增强和边缘检测，展示数字影像技术在实践中的应用。</p>
+          <div class="tag-row">
+            <span>OpenCV</span>
+            <span>图像增强</span>
+            <span>可视化</span>
+          </div>
+          <a class="btn btn-small" href="#project-image">跳转到项目详情</a>
+        </article>
+
+        <article class="project-card fade-card">
+          <div class="project-cover cover-doc">文档管理</div>
+          <h2>实验报告整理项目</h2>
+          <p>将项目说明、页面功能、业务流程、截图清单和总结体会整理为可复用报告材料。</p>
+          <div class="tag-row">
+            <span>Markdown</span>
+            <span>Mermaid</span>
+            <span>GitHub</span>
+          </div>
+          <a class="btn btn-small" href="#project-doc">跳转到项目详情</a>
+        </article>
+
+        <article class="project-card fade-card">
+          <div class="project-cover cover-team">协作实践</div>
+          <h2>课程项目管理实践</h2>
+          <p>使用任务拆分、进度记录、版本提交和成果展示方法，提高项目开发的规范性与可追踪性。</p>
+          <div class="tag-row">
+            <span>需求分析</span>
+            <span>流程设计</span>
+            <span>测试验证</span>
+          </div>
+          <a class="btn btn-small" href="#project-manage">跳转到项目详情</a>
+        </article>
+      </div>
+
+      <div class="detail-section">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Project Details</p>
+          <h2>项目详情说明</h2>
+          <p>点击上方项目卡片的详情按钮后，页面会跳转到对应项目说明，展示功能构成、实现思路和可展示成果。</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card fade-card" id="project-static-site">
+            <h3>学习导航静态网站项目</h3>
+            <p>该项目是本站的核心成果，主要实现课程资源浏览、实验任务梳理、项目案例展示、工具入口汇总和项目说明归档。</p>
+            <ul>
+              <li>适用场景：信息学院创新实验课期末项目，用于课程展示、报告截图和团队合作实践。</li>
+              <li>核心页面：首页、课程资源页、实验作业页、项目展示页、学习工具页、关于我们页。</li>
+              <li>主要交互：导航高亮、搜索筛选、公告切换、返回顶部、卡片淡入。</li>
+              <li>展示成果：可运行网站、README、docs 报告材料、截图清单。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="project-ml">
+            <h3>学习状态预测项目</h3>
+            <p>该项目可作为机器学习课程方向案例，使用模拟学习行为数据进行分析，例如学习时长、作业完成率、测验成绩和访问频次。</p>
+            <ul>
+              <li>适用场景：适合对数据分析与机器学习感兴趣的学生，用于理解监督学习的基本流程。</li>
+              <li>功能构想：数据清洗、特征构建、模型训练、预测结果展示。</li>
+              <li>技术路线：Python、Pandas、Scikit-learn、可视化图表。</li>
+              <li>展示成果：模型评估表、预测结果图、项目说明文档。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="project-mini">
+            <h3>校园服务小程序项目</h3>
+            <p>该项目面向移动端校园信息服务，适合设计课程表、实验提醒、公告浏览、常用链接收藏等功能。</p>
+            <ul>
+              <li>适用场景：面向希望尝试移动端应用设计的学生，适合作为微信小程序开发方向的入门实践。</li>
+              <li>功能构想：课程安排、任务提醒、资源收藏、校园通知。</li>
+              <li>技术路线：小程序页面、组件化界面、本地模拟数据。</li>
+              <li>展示成果：页面原型、功能流程图、关键页面截图。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="project-image">
+            <h3>图像增强与识别项目</h3>
+            <p>该项目围绕数字影像技术展开，可实现图像读取、灰度化、滤波增强、边缘检测和结果对比展示。</p>
+            <ul>
+              <li>适用场景：适合对计算机视觉或数字图像处理感兴趣的学生，可结合课程实验展开实践。</li>
+              <li>功能构想：上传或读取示例图片，输出不同处理阶段的图像。</li>
+              <li>技术路线：OpenCV、图像矩阵、滤波算法、边缘检测。</li>
+              <li>展示成果：处理前后对比图、算法说明、实验结果分析。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="project-doc">
+            <h3>实验报告整理项目</h3>
+            <p>该项目用于整理课程提交材料，将项目背景、页面功能、业务流程、功能草图、测试过程和总结体会集中成文档。</p>
+            <ul>
+              <li>适用场景：适用于本课程及其他需要提交规范化实验报告的课程项目。</li>
+              <li>功能构想：按报告章节整理可直接引用的文字材料。</li>
+              <li>技术路线：Markdown、Mermaid、目录结构管理。</li>
+              <li>展示成果：project_description、workflow、report_material、screenshot_checklist。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="project-manage">
+            <h3>课程项目管理实践</h3>
+            <p>该项目强调项目过程管理，适合展示从选题到提交的完整路径，包括需求确认、页面开发、功能测试、仓库上传和报告整理。</p>
+            <ul>
+              <li>适用场景：适用于小组协作的课程项目，帮助团队成员建立规范化的项目管理流程。</li>
+              <li>功能构想：任务拆分、进度记录、问题修复、提交归档。</li>
+              <li>技术路线：Git、GitHub、README、截图清单。</li>
+              <li>展示成果：仓库首页、提交记录、运行截图、报告附件。</li>
+            </ul>
+            <a class="detail-back" href="#projects-overview">返回项目模块</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+
+  <footer class="site-footer">
+    <p>信息学院学生学习导航平台 | 项目展示</p>
+    <p>项目案例为课程学习场景示例，不涉及真实用户数据。</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
