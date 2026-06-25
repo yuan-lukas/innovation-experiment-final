@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实验作业 - 信息学院学生学习导航平台</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="../index.html">信息学院学生学习导航平台</a>
+      <button class="nav-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+      <ul class="nav-menu">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="courses.html">课程资源</a></li>
+        <li><a href="experiments.html">实验作业</a></li>
+        <li><a href="projects.html">项目展示</a></li>
+        <li><a href="tools.html">学习工具</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Experiment Tasks</p>
+        <h1>实验作业</h1>
+        <p>按实验阶段展示任务目标、完成状态和涉及技术，帮助梳理从基础练习到期末综合项目的学习过程。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="toolbar">
+        <label class="search-box">
+          <span>实验搜索</span>
+          <input type="search" data-search-input data-search-target=".experiment-card" placeholder="输入 实验五、HTML、报告、GitHub 等关键词">
+        </label>
+        <p class="result-count" data-result-count data-orig="共 5 项实验">共 5 项实验</p>
+      </div>
+
+      <div class="timeline-list">
+        <article class="experiment-card fade-card" data-keywords="实验一 html 页面结构 基础 标签">
+          <div class="experiment-index">01</div>
+          <div class="experiment-content">
+            <span class="status status-done">已完成</span>
+            <h2>实验一：HTML 页面结构设计</h2>
+            <p>完成基础网页结构搭建，理解标题、段落、列表、链接、图片等常用标签的语义与使用方法。</p>
+            <ul class="task-points">
+              <li>建立标准 HTML 文档结构，设置页面标题和编码。</li>
+              <li>完成导航、内容区、页脚等基础区域。</li>
+              <li>检查页面在浏览器中能正常打开。</li>
+            </ul>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>语义化标签</span>
+              <span>页面结构</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experiment-card fade-card" data-keywords="实验二 css 样式 盒模型 布局">
+          <div class="experiment-index">02</div>
+          <div class="experiment-content">
+            <span class="status status-done">已完成</span>
+            <h2>实验二：CSS 样式与布局</h2>
+            <p>实现颜色、字体、边距、盒模型、Flex 布局和卡片样式，提升页面视觉表现与排版能力。</p>
+            <ul class="task-points">
+              <li>设计统一颜色、字体、按钮和卡片风格。</li>
+              <li>使用网格或弹性布局组织页面内容。</li>
+              <li>完成电脑端与手机端的响应式适配。</li>
+            </ul>
+            <div class="tag-row">
+              <span>CSS</span>
+              <span>Flex</span>
+              <span>响应式</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experiment-card fade-card" data-keywords="实验三 javascript dom 交互 事件">
+          <div class="experiment-index">03</div>
+          <div class="experiment-content">
+            <span class="status status-done">已完成</span>
+            <h2>实验三：JavaScript 基础交互</h2>
+            <p>通过 DOM 查询、事件监听和样式切换，实现按钮反馈、信息提示、页面交互等功能。</p>
+            <ul class="task-points">
+              <li>实现当前页面导航高亮。</li>
+              <li>完成课程页或实验页关键词筛选。</li>
+              <li>实现返回顶部和卡片淡入效果。</li>
+            </ul>
+            <div class="tag-row">
+              <span>JavaScript</span>
+              <span>DOM</span>
+              <span>事件监听</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experiment-card fade-card" data-keywords="实验四 github 文档 readme 项目整理">
+          <div class="experiment-index">04</div>
+          <div class="experiment-content">
+            <span class="status status-done">已完成</span>
+            <h2>实验四：项目整理与版本管理</h2>
+            <p>学习使用 GitHub 管理项目文件，整理 README、目录结构、运行说明和截图材料。</p>
+            <ul class="task-points">
+              <li>整理项目目录，保证代码、样式、脚本和文档分类清晰。</li>
+              <li>编写 README，说明项目简介、运行方式和主要功能。</li>
+              <li>准备 GitHub 上传和提交记录截图。</li>
+            </ul>
+            <div class="tag-row">
+              <span>GitHub</span>
+              <span>README</span>
+              <span>项目文档</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experiment-card fade-card highlight-card" data-keywords="实验五 期末 大作业 静态网站 综合项目 报告 截图">
+          <div class="experiment-index">05</div>
+          <div class="experiment-content">
+            <span class="status status-focus">重点任务</span>
+            <h2>实验五：期末大作业综合项目</h2>
+            <p>完成“信息学院学生学习导航平台”静态网站，包含 6 个页面、统一样式、基础交互、项目文档、报告材料和截图清单。</p>
+            <ul class="task-points">
+              <li>完成首页、课程资源页、实验作业页、项目展示页、学习工具页、关于我们页。</li>
+              <li>保证所有页面导航统一，按钮跳转合理，内容完整可读。</li>
+              <li>生成 docs 文档材料，辅助实验报告撰写与截图整理。</li>
+            </ul>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>响应式设计</span>
+              <span>报告材料</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="detail-section">
+        <article class="detail-card fade-card">
+          <p class="eyebrow">Final Task Checklist</p>
+          <h2>实验五验收要点</h2>
+          <p>实验五建议从“页面是否完整、样式是否统一、交互是否可用、文档是否齐全、截图是否覆盖重点”五个方面检查。</p>
+          <div class="check-grid">
+            <div>
+              <h3>页面完整性</h3>
+              <p>至少包含 6 个页面，首页、课程、实验、项目、工具、关于说明均可正常访问。</p>
+            </div>
+            <div>
+              <h3>交互可用性</h3>
+              <p>导航高亮、搜索筛选、公告切换、返回顶部和卡片淡入效果均可正常触发。</p>
+            </div>
+            <div>
+              <h3>文档规范性</h3>
+              <p>README 和 docs 文档完整，能直接支持实验报告、流程图说明和截图整理。</p>
+            </div>
+            <div>
+              <h3>展示可截图</h3>
+              <p>每个页面都应有明确标题、核心内容和视觉重点，适合放入课程报告。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+
+  <footer class="site-footer">
+    <p>信息学院学生学习导航平台 | 实验作业</p>
+    <p>实验内容用于课程学习过程展示，页面信息均为示例化学习材料。</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

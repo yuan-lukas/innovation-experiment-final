@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 信息学院学生学习导航平台</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="../index.html" class="brand">信息学院学习导航</a>
+            <nav class="nav-menu">
+                <a href="../index.html">首页</a>
+                <a href="courses.html">课程资源</a>
+                <a href="experiments.html">实验作业</a>
+                <a href="projects.html">项目展示</a>
+                <a href="tools.html">学习工具</a>
+                <a href="about.html" class="active">关于我们</a>
+            </nav>
+            <button class="nav-toggle" aria-label="菜单">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero区域 -->
+        <section class="page-hero">
+            <h1>关于我们</h1>
+            <p>信息学院学生学习导航平台 · 创新实验期末综合项目</p>
+        </section>
+
+        <!-- 项目概述 -->
+        <section class="section-soft">
+            <div class="about-layout">
+                <!-- 左侧主要内容 -->
+                <div class="about-main">
+                    <div class="detail-card" id="purpose">
+                        <h2>项目设计目的</h2>
+                        <p>本平台面向信息学院学生学习场景，旨在打造一个轻量级静态学习导航平台，集中展示课程资源、实验任务、创新项目、学习工具和项目说明，帮助学生快速定位学习资料、了解实验要求和获取开发工具，提升资料查找效率与课程学习体验。</p>
+                    </div>
+
+                    <div class="detail-card" id="reason">
+                        <h2>选题原因</h2>
+                        <p>信息学院学生课程实践较多，需要集中查找课程资源、开发工具、项目文档等信息。建立一个统一的学习导航平台，既能解决信息分散的问题，又能在项目开发过程中全面展示 Web 前端开发能力，包括页面结构组织、CSS 样式设计、JavaScript 交互实现和文档写作能力，高度契合《创新实验》课程的综合实践要求。</p>
+                    </div>
+
+                    <div class="detail-card" id="features">
+                        <h2>功能设置依据</h2>
+                        <p>本平台围绕学生学习路径设计了六大功能模块：</p>
+                        <ul>
+                            <li><strong>首页</strong>：平台概述、功能入口导航和课程公告</li>
+                            <li><strong>课程资源</strong>：展示 Web 开发、软件工程、机器学习等核心课程卡片，支持关键词搜索筛选</li>
+                            <li><strong>实验作业</strong>：列出实验一到实验五任务清单，突出期末大作业</li>
+                            <li><strong>项目展示</strong>：展示静态网站、机器学习、小程序、图像处理等创新项目案例</li>
+                            <li><strong>学习工具</strong>：汇总 VS Code、GitHub、MDN 等常用开发工具和学习资源链接</li>
+                            <li><strong>关于我们</strong>：项目说明、成员信息、合规声明和诚信说明</li>
+                        </ul>
+                    </div>
+
+                    <!-- ⭐ 成员信息（赵家国已修改为真实信息） -->
+                    <div class="detail-card" id="members">
+                        <h2>小组成员</h2>
+                        <table class="member-table">
+                            <thead>
+                                <tr>
+                                    <th>角色</th>
+                                    <th>姓名</th>
+                                    <th>学号</th>
+                                    <th>分工</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="role-badge leader">组长</span></td>
+                                    <td>刘凯</td>
+                                    <td>20231060263</td>
+                                    <td>项目主题、功能范围、页面结构、技术路线；index.html 整体把控 + docs/ 文档</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="role-badge member">组员</span></td>
+                                    <td>赵杰</td>
+                                    <td>20231060331</td>
+                                    <td>首页入口、导航栏、横幅、页脚；index.html 修改</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="role-badge member">组员</span></td>
+                                    <td>刘祖涛</td>
+                                    <td>20231060014</td>
+                                    <td>课程资源卡片、搜索筛选、实验任务列表；pages/courses.html + pages/experiments.html</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="role-badge member">组员</span></td>
+                                    <td>陈建涛</td>
+                                    <td>20231060225</td>
+                                    <td>项目案例、技术标签、工具资源链接；pages/projects.html + pages/tools.html</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="role-badge member">组员</span></td>
+                                    <td>赵家国</td>
+                                    <td>20231060224</td>
+                                    <td>关于我们页、README、docs、运行截图、报告材料、CSS/JS；pages/about.html + README.md + css/style.css + js/main.js</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="detail-card" id="completion">
+                        <h2>完成说明</h2>
+                        <p>本小组已完成以下期末项目要求内容：静态页面开发（6 个页面）、统一样式设计（CSS 变量 + 响应式布局）、基础 JS 交互（导航高亮、搜索筛选、公告切换、返回顶部、卡片淡入效果）、项目文档整理（docs/ 下 6 份 Markdown 文档）、截图清单编写。项目通过 GitHub 进行版本控制和团队协同开发，每位成员分别负责不同的页面和功能模块。</p>
+                    </div>
+
+                    <!-- 合规与诚信说明 -->
+                    <div class="detail-card" id="compliance">
+                        <h2>内容合规说明</h2>
+                        <p>本平台内容仅围绕课程学习、技术导航和项目展示展开。所有页面内容健康合规，不包含任何违反国家法律法规、社会公序良俗、低俗暴力、歧视攻击或其他不当信息，符合《创新实验》课程的内容合规要求。</p>
+                    </div>
+
+                    <div class="detail-card" id="privacy">
+                        <h2>隐私与数据来源说明</h2>
+                        <p>本平台为纯静态网站，无登录注册功能、无后端数据库、不采集任何用户个人隐私信息。页面中引用的课程资源链接、工具链接均来自公开学习平台和官方文档。项目仅作为课程学习、实践和成果展示用途。</p>
+                    </div>
+
+                    <div class="detail-card" id="integrity">
+                        <h2>学习诚信说明</h2>
+                        <p>本项目材料由小组成员分工协作完成，仅用于《创新实验》课程的学习、实践和成果展示。提交的实验报告包含真实的个人信息、运行截图和测试记录。全体成员承诺遵守学术诚信原则，不存在抄袭、伪造或代写行为。如使用 AI 辅助工具生成内容或代码，已由成员充分理解并能独立说明其含义和实现原理。</p>
+                    </div>
+                </div>
+
+                <!-- 右侧导航 -->
+                <aside class="about-sidebar">
+                    <nav class="sidebar-nav">
+                        <h3>页面导航</h3>
+                        <a href="#purpose">项目设计目的</a>
+                        <a href="#reason">选题原因</a>
+                        <a href="#features">功能设置依据</a>
+                        <a href="#members">小组成员</a>
+                        <a href="#completion">完成说明</a>
+                        <a href="#compliance">内容合规说明</a>
+                        <a href="#privacy">隐私与数据来源</a>
+                        <a href="#integrity">学习诚信说明</a>
+                    </nav>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>信息学院学生学习导航平台 &copy; 2026 创新实验期末项目</p>
+            <p>内容合规 · 数据最小化 · 学习诚信</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

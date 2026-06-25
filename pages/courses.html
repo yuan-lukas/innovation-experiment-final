@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程资源 - 信息学院学生学习导航平台</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="../index.html">信息学院学生学习导航平台</a>
+      <button class="nav-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+      <ul class="nav-menu">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="courses.html">课程资源</a></li>
+        <li><a href="experiments.html">实验作业</a></li>
+        <li><a href="projects.html">项目展示</a></li>
+        <li><a href="tools.html">学习工具</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Course Resources</p>
+        <h1>课程资源</h1>
+        <p>以课程卡片形式展示信息学院常见专业课程，便于快速了解课程目标、学习重点和实践方向。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="toolbar">
+        <label class="search-box">
+          <span>课程搜索</span>
+          <input type="search" data-search-input data-search-target=".resource-card" placeholder="输入 Web、机器学习、创新实验等关键词">
+        </label>
+        <p class="result-count" data-result-count data-orig="共 5 项资源">共 5 项资源</p>
+      </div>
+
+      <div class="card-grid" id="courses-overview">
+        <article class="resource-card fade-card" data-keywords="web 开发 html css javascript 前端">
+          <div class="card-topline">Web Development</div>
+          <h2>Web 开发</h2>
+          <p>学习网页结构、样式设计、基础交互和响应式布局，理解静态网站项目的完整开发流程。</p>
+          <h3>学习重点</h3>
+          <ul>
+            <li>HTML 语义化结构</li>
+            <li>CSS 盒模型、布局与响应式设计</li>
+            <li>JavaScript DOM 操作与事件处理</li>
+          </ul>
+          <a class="btn btn-small" href="#course-web">跳转到课程详情</a>
+        </article>
+
+        <article class="resource-card fade-card" data-keywords="软件工程 需求分析 uml 测试 项目管理">
+          <div class="card-topline">Software Engineering</div>
+          <h2>软件工程</h2>
+          <p>掌握需求分析、概要设计、详细设计、编码测试与项目文档整理等工程化方法。</p>
+          <h3>学习重点</h3>
+          <ul>
+            <li>需求分析与功能模块划分</li>
+            <li>业务流程图、页面原型与测试记录</li>
+            <li>版本管理和项目说明文档</li>
+          </ul>
+          <a class="btn btn-small" href="#course-se">跳转到课程详情</a>
+        </article>
+
+        <article class="resource-card fade-card" data-keywords="机器学习 人工智能 python 模型 数据">
+          <div class="card-topline">Machine Learning</div>
+          <h2>机器学习</h2>
+          <p>了解数据预处理、模型训练、模型评估和结果展示，建立算法实践的基本认识。</p>
+          <h3>学习重点</h3>
+          <ul>
+            <li>训练集与测试集划分</li>
+            <li>分类、回归和聚类任务</li>
+            <li>准确率、召回率等评价指标</li>
+          </ul>
+          <a class="btn btn-small" href="#course-ml">跳转到课程详情</a>
+        </article>
+
+        <article class="resource-card fade-card" data-keywords="数字影像技术 图像处理 opencv 像素 滤波">
+          <div class="card-topline">Digital Imaging</div>
+          <h2>数字影像技术</h2>
+          <p>围绕图像采集、图像增强、边缘检测和结果展示，理解数字图像处理的基本流程。</p>
+          <h3>学习重点</h3>
+          <ul>
+            <li>像素、颜色空间与图像格式</li>
+            <li>滤波、锐化和边缘检测</li>
+            <li>处理结果可视化与说明</li>
+          </ul>
+          <a class="btn btn-small" href="#course-image">跳转到课程详情</a>
+        </article>
+
+        <article class="resource-card fade-card highlight-card" data-keywords="创新实验 期末 大作业 静态网站 项目">
+          <div class="card-topline">Innovation Experiment</div>
+          <h2>创新实验</h2>
+          <p>通过综合项目训练选题、设计、开发、测试、展示和报告撰写能力，形成可运行的课程成果。</p>
+          <h3>学习重点</h3>
+          <ul>
+            <li>项目选题与需求说明</li>
+            <li>静态网站页面开发与交互实现</li>
+            <li>README、报告材料与截图整理</li>
+          </ul>
+          <a class="btn btn-small" href="#course-innovation">跳转到课程详情</a>
+        </article>
+      </div>
+
+      <div class="detail-section">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Course Details</p>
+          <h2>课程学习建议</h2>
+          <p>点击上方课程卡片的详情按钮后，页面会跳转到对应课程说明，方便截图展示“模块入口 + 详情内容”的完整结构。</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card fade-card" id="course-web">
+            <h3>Web 开发</h3>
+            <p>建议按照“结构、样式、交互、适配、测试”的顺序学习。完成本网站时主要使用 HTML 搭建页面结构，使用 CSS 控制卡片布局和响应式效果，使用 JavaScript 实现搜索和公告切换。</p>
+            <ul>
+              <li>推荐练习：制作个人课程导航页、实验任务页和工具链接页。</li>
+              <li>项目关联：本项目 6 个页面均体现 Web 开发综合应用。</li>
+              <li>参考入口：MDN Web Docs、菜鸟教程、浏览器开发者工具。</li>
+            </ul>
+            <a class="detail-back" href="#courses-overview">返回课程模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="course-se">
+            <h3>软件工程</h3>
+            <p>软件工程关注需求分析、模块划分、流程设计、测试验证和文档维护。本项目通过 README、docs 文档、页面功能说明和截图清单体现工程化整理过程。</p>
+            <ul>
+              <li>推荐练习：写出功能清单、业务流程图、测试用例和版本提交说明。</li>
+              <li>项目关联：项目目录结构、页面模块划分和报告材料均属于软件工程实践。</li>
+              <li>参考入口：GitHub、Markdown、Mermaid 流程图。</li>
+            </ul>
+            <a class="detail-back" href="#courses-overview">返回课程模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="course-ml">
+            <h3>机器学习</h3>
+            <p>机器学习课程重点在于理解数据、特征、模型和评估。本网站不实现模型训练，但在项目展示页中保留机器学习项目案例，便于说明信息学院项目方向的多样性。</p>
+            <ul>
+              <li>推荐练习：用模拟学习数据完成分类或预测任务。</li>
+              <li>项目关联：项目展示页中的“学习状态预测项目”可作为机器学习方向示例。</li>
+              <li>参考入口：Python、Scikit-learn、Jupyter Notebook。</li>
+            </ul>
+            <a class="detail-back" href="#courses-overview">返回课程模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="course-image">
+            <h3>数字影像技术</h3>
+            <p>数字影像技术适合与图像处理项目结合，常见内容包括图像读取、颜色空间转换、滤波增强、边缘检测和结果展示。</p>
+            <ul>
+              <li>推荐练习：比较原图、灰度图、增强图和边缘检测图。</li>
+              <li>项目关联：项目展示页中的“图像增强与识别项目”可作为图像处理方向示例。</li>
+              <li>参考入口：OpenCV、图像格式基础、可视化报告。</li>
+            </ul>
+            <a class="detail-back" href="#courses-overview">返回课程模块</a>
+          </article>
+
+          <article class="detail-card fade-card" id="course-innovation">
+            <h3>创新实验</h3>
+            <p>创新实验课程强调综合实践能力。本网站把项目选题、页面实现、交互效果、文档整理和截图准备放在同一项目中，适合作为期末综合项目提交材料。</p>
+            <ul>
+              <li>推荐练习：先完成静态页面，再整理 README、报告文字和截图清单。</li>
+              <li>项目关联：实验五期末大作业即为本网站的核心成果。</li>
+              <li>参考入口：项目 README、docs 报告材料、GitHub 仓库展示。</li>
+            </ul>
+            <a class="detail-back" href="#courses-overview">返回课程模块</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+
+  <footer class="site-footer">
+    <p>信息学院学生学习导航平台 | 课程资源</p>
+    <p>资源链接仅用于学习导航，请遵守课程规范和平台使用规则。</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
