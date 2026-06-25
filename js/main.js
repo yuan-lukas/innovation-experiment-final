@@ -138,3 +138,5 @@ function initFadeCards() {
     observer.observe(card);
   });
 }
+
+// 赵家国负责：交互脚本确认

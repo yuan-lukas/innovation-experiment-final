@@ -74,3 +74,5 @@ innovation-experiment-final/
 ---
 
 **信息学院 · 创新实验课程 · 2026 年春季学期**
+
+<!-- 赵家国负责：README 项目说明确认 -->
